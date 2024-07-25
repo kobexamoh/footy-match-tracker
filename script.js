@@ -7,8 +7,6 @@ let requestHeaders = new Headers();
 requestHeaders.append("x-rapidapi-host", "v3.football.api-sports.io");
 requestHeaders.append("x-rapidapi-key", apiKEY);
 
-
-
 let response = await fetch(baseURL, {
     "method": "GET",
     "headers": requestHeaders
