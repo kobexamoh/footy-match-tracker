@@ -18,3 +18,10 @@ if (response.ok) {
 } else {
     alert("HTTP-Error: " + response.status);
 }
+
+
+// Create player card
+function createPlayerCard() {
+    let playerDiv = document.createElement("div");
+    playerDiv.classList.add("playerCard", "playerBox");
+}
