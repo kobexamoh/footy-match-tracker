@@ -8,10 +8,24 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-    <h1 class="text-3xl font-bold underline">Footy Match Tracker</h1>
-    <button id="fetchData">Fetch Data</button>
-    <pre id="output"></pre>
 
+<div class="container mx-auto pt-12 px-6">
+    <h1 class="text-2xl md:text-4xl lg:text-6xl font-bold">Footy Match Tracker</h1>
+    
+    <div class="mt-1 lg:mt-3">
+        <h2 class="text-lg md:text-2xl lg:text-4xl font-medium">Search</h2>
+        <div>
+        <p class="text-sm md:text-xl lg:text-2xl">Lookup a player to learn how they performed in their most recent competition</p>
+        <search class="text-sm md:text-base mt-3">
+            <form action="#">
+                <label for="player"></label>
+                <input type="search" id="playerSearch" placeholder="Enter player name" class="rounded-md border border-slate-400 py-1 pl-3">
+                <button type="submit" class="rounded-md border border-slate-300 px-2 py-1">Search</button>
+            </form>
+            </search>
+            </div>
+    </div>
+</div>
     <script src="script.js" type="module"></script>
 </body>
 </html>
